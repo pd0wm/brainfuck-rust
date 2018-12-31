@@ -89,6 +89,9 @@ fn main() {
                 let entry = char::from(*entry);
                 print!("{}", entry);
             }
+            ',' => {
+                panic!("Input not implemented yet");
+            }
             '[' => {
                 if *entry == 0 {
                     ip = find_matching_closing(&contents, ip);
